@@ -78,8 +78,8 @@ for track in sp.playlist_items(playlist_URI)["items"]:
     time.sleep(1)
 
 # Save the track data to a JSON file
-with open("track_data.json", "w") as json_file:
+with open("spotify_track_data.json", "w") as json_file:
     json.dump(track_data, json_file)
 
-print("Track data saved to track_data.json")
+print("Track data saved to spotify_track_data.json")
 
