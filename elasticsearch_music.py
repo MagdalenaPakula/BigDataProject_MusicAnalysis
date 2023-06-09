@@ -84,7 +84,7 @@ import pyarrow.parquet as pq
 import pandas as pd
 
 # Step 1: Load the formatted data from the Parquet file
-parquet_file_path = "formatted_data.parquet"
+parquet_file_path = "parquet_files/formatted_data.parquet"
 parquet_data = pq.read_table(parquet_file_path)
 formatted_df = parquet_data.to_pandas()
 

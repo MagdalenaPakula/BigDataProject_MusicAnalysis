@@ -3,14 +3,14 @@ import pyarrow.parquet as pq
 import pandas as pd
 
 # Step 1: Load the formatted data from the Parquet file
-parquet_file_path = "formatted_data.parquet"
+parquet_file_path = "parquet_files/formatted_data.parquet"
 parquet_data = pq.read_table(parquet_file_path)
 formatted_df = parquet_data.to_pandas()
 
 # Step 2: Combine the data from different sources
-billboard_df = pd.read_json('formatted_billboard_track_data.json')
-lastfm_df = pd.read_json('formatted_lastfm_track_data.json')
-spotify_df = pd.read_json('formatted_spotify_data.json')
+billboard_df = pd.read_json('json_files/formatted_billboard_track_data.json')
+lastfm_df = pd.read_json('json_files/formatted_lastfm_track_data.json')
+spotify_df = pd.read_json('json_files/formatted_spotify_data.json')
 
 # Perform a join operation based on common keys
 combined_df = billboard_df.merge(lastfm_df, left_on=['Track Name', 'Artist Name'], right_on=['name', 'artist'], how='inner')

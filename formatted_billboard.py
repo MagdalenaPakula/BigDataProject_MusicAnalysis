@@ -3,7 +3,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 
 # Load the billboard track data from the JSON
-with open("billboard_track_data.json", "r") as json_file:
+with open("json_files/billboard_track_data.json", "r") as json_file:
     billboard_track_data = json.load(json_file)
 
 # Extract the required fields and create a new list of dictionaries
