@@ -13,6 +13,6 @@ def csv_to_json(csv_file, json_file):
 
 # Usage example
 csv_file = 'raw_data/Shazam_Top_200_Global_Chart.csv'
-json_file = 'json_files/shazam_track_data.json'
+json_file = 'raw_data/shazam_track_data.json'
 csv_to_json(csv_file, json_file)
 

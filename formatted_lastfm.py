@@ -5,7 +5,7 @@ import pyarrow.parquet as pq
 # Step 2.2: Formatting the lastfm_track_data.json
 
 # Read the JSON file
-with open('json_files/lastfm_track_data.json') as json_file:
+with open('raw_data/lastfm_track_data.json') as json_file:
     lastfm_track_data = json.load(json_file)
 
 # Extract the necessary information from the JSON data
@@ -29,7 +29,7 @@ formatted_df = pd.DataFrame(formatted_data)
 formatted_df.to_json('formatted_lastfm_track_data.json', orient='records')
 
 # Read and display the content of the formatted JSON file
-formatted_data = pd.read_json('json_files/formatted_lastfm_track_data.json')
+formatted_data = pd.read_json('formatted_files/formatted_lastfm_track_data.json')
 print("Formatted lastfm_track_data:")
 print(formatted_data)
 

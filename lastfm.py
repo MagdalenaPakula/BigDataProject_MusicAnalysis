@@ -29,6 +29,6 @@ data = r.json()
 jprint(data)
 
 # Save the data in a JSON file
-with open('json_files/lastfm_track_data.json', 'w') as file:
+with open('raw_data/lastfm_track_data.json', 'w') as file:
     json.dump(data, file)
 

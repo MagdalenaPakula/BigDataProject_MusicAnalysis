@@ -3,7 +3,7 @@ import json
 import pyarrow.parquet as pq
 
 # Load the track data from the JSON file
-with open("json_files/spotify_track_data.json", "r") as json_file:
+with open("raw_data/spotify_track_data.json", "r") as json_file:
     spotify_track_data = json.load(json_file)
 
 # Convert the track data to a Pandas DataFrame
@@ -25,7 +25,7 @@ df.to_parquet("formatted_spotify.parquet", index=False)
 formatted_data = df.to_dict(orient='records')
 for record in formatted_data:
     record["Release Date"] = pd.to_datetime(record["Release Date"]).timestamp()  # Convert to timestamp
-with open("json_files/formatted_spotify_data.json", "w") as json_file:
+with open("formatted_files/formatted_spotify_data.json", "w") as json_file:
     json.dump(formatted_data, json_file, indent=4)
 
 # Display the formatted data
