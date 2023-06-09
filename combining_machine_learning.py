@@ -1,61 +1,56 @@
+import json
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
-import pandas as pd
 
-# Load the formatted data from different sources into DataFrames
-billboard_df = pd.read_json('formatted_files/formatted_billboard_track_data.json')
-lastfm_df = pd.read_json('formatted_files/formatted_lastfm_track_data.json')
-spotify_df = pd.read_json('formatted_files/formatted_spotify_data.json')
+# Load the combined data from the JSON file
+with open('combined_data.json') as file:
+    combined_data = json.load(file)
 
-# Concatenate all the DataFrames vertically
-combined_df = pd.concat([billboard_df, lastfm_df, spotify_df])
+# Step 2: Extract features and target variables
+X = []
+y = []
+for data_point in combined_data:
+    track_name = data_point.get('Track Name')
+    if track_name is not None:
+        artist_name = data_point.get('Artist Name')
+        track_popularity = data_point.get('Track Popularity', 0)  # Handle missing data
+        duration_sec = data_point.get('Duration (sec)', 0)  # Handle missing data
+        weeks_on_chart = data_point.get('Weeks on Chart', 0)  # Target variable
+        # Add additional features as needed
 
-# Save the combined DataFrame as a JSON file
-combined_df.to_json('combined_data.json')
+        X.append([track_popularity, duration_sec])
+        y.append(weeks_on_chart)
 
-# Display all the rows of the combined_df
-print(combined_df)
-
-# Select the relevant columns for training
-selected_columns = ['Track Name', 'Artist Name', 'Artist Popularity', 'Artist Genres', 'Album', 'Track Popularity', 'Release Date', 'Duration (sec)']
-
-# Filter the combined data to include only the selected columns
-filtered_df = combined_df[selected_columns]
-
-# Drop any rows with missing values
-filtered_df = filtered_df.dropna()
-
-# Encode categorical variables using one-hot encoding
-encoded_df = pd.get_dummies(filtered_df, columns=['Artist Genres', 'Album'])
-
-# Split the data into features (X) and target (y)
-X = encoded_df.drop(['Track Name', 'Artist Name'], axis=1)
-y = encoded_df['Track Name']
-
-# Split the data into training and testing sets
+# Step 3: Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Create and fit the random forest regressor model
+# Step 4: Create and fit the random forest regressor model
 model = RandomForestRegressor(random_state=42)
 model.fit(X_train, y_train)
 
-# Make predictions on the test set
+# Step 5: Make predictions on the testing data
 y_pred = model.predict(X_test)
 
-# Calculate mean absolute error
+# Step 6: Calculate mean absolute error
 mae = mean_absolute_error(y_test, y_pred)
 print(f"Mean Absolute Error: {mae}")
 
-# Create a mapping dictionary for label encoding
-label_mapping = {label: index for index, label in enumerate(y.unique())}
+# Step 7: Make interesting predictions or analyze the results further
+# For example, let's predict the weeks on chart for the first few rows of the combined data
+predicted_weeks_on_chart = []
+real_weeks_on_chart = []
+for data_point in combined_data[:4]:
+    track_popularity = data_point.get('Track Popularity', 0)  # Handle missing data
+    duration_sec = data_point.get('Duration (sec)', 0)  # Handle missing data
+    # Add additional features as needed
 
-# Inverse transform the target labels (y_test) and predicted labels (y_pred)
-actual_track_names = y_test.map(label_mapping)
-predicted_track_names = y_pred.round().astype(int).map(label_mapping)
+    prediction = model.predict([[track_popularity, duration_sec]])
+    predicted_weeks_on_chart.append(prediction[0])
+    real_weeks_on_chart.append(data_point.get('Weeks on Chart'))
 
-print("Actual Track Names:")
-print(actual_track_names.values)
-
-print("Predicted Track Names:")
-print(predicted_track_names.values)
+# Print the predicted and real weeks on chart
+print("Predicted Weeks on Chart:")
+print(predicted_weeks_on_chart)
+print("Real Weeks on Chart:")
+print(real_weeks_on_chart)
