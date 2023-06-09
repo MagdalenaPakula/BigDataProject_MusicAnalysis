@@ -5,7 +5,7 @@ import pyarrow.parquet as pq
 # Step 2.2: Formatting the lastfm_track_data.json
 
 # Read the JSON file
-with open('raw_data/lastfm_track_data.json') as json_file:
+with open('../../data/raw/lastfm_track_data.json') as json_file:
     lastfm_track_data = json.load(json_file)
 
 # Extract the necessary information from the JSON data

@@ -161,13 +161,13 @@ def get_top_singers_by_genre(genre, top_n=10, index_name='music_data', es_host='
 
 
 # Step 1: Load the formatted data from the Parquet file
-parquet_file_path = "parquet_files/formatted_data.parquet"
+parquet_file_path = "data/formatted/parquet/formatted_data.parquet"
 formatted_df = load_formatted_data(parquet_file_path)
 
 # Step 2: Combine the data from different sources
-billboard_file = 'formatted_billboard_track_data.json'
-lastfm_file = 'formatted_lastfm_track_data.json'
-spotify_file = 'formatted_spotify_data.json'
+billboard_file = 'data/formatted/json/formatted_billboard_track_data.json'
+lastfm_file = 'data/formatted/json/formatted_lastfm_track_data.json'
+spotify_file = 'data/formatted/json/formatted_spotify_data.json'
 combined_df = combine_data(billboard_file, lastfm_file, spotify_file)
 
 # Save the combined data to Parquet format

@@ -4,7 +4,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 # Load the combined data from the JSON file
-with open('combined_data.json') as file:
+with open('../../data/combined/combined_data.json') as file:
     combined_data = json.load(file)
 
 # Step 2: Extract features and target variables

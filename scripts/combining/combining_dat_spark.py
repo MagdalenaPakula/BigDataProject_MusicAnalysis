@@ -6,7 +6,7 @@ from pyspark.ml.feature import StringIndexer
 from pyspark.ml.recommendation import ALS
 
 # Load the combined JSON data
-with open('combined_data.json') as file:
+with open('../../data/combined/combined_data.json') as file:
     combined_data = json.load(file)
 
 # Create a SparkSession

@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Load the JSON data
-with open('raw_data/shazam_track_data.json', 'r') as file:
+with open('../../data/raw/shazam_track_data.json', 'r') as file:
     data = json.load(file)
 
 # Extract the relevant information and convert it into a list of dictionaries

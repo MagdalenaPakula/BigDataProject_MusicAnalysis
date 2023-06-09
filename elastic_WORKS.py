@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Load the combined data from JSON file
-combined_df = pd.read_json('combined_data.json')
+combined_df = pd.read_json('data/combined/combined_data.json')
 
 # Replace 'NaN' values with np.nan
 combined_df.replace('NaN', np.nan, inplace=True)

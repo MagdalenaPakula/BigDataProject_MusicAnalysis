@@ -3,7 +3,7 @@ import json
 import pyarrow.parquet as pq
 
 # Load the track data from the JSON file
-with open("raw_data/spotify_track_data.json", "r") as json_file:
+with open("../../data/raw/spotify_track_data.json", "r") as json_file:
     spotify_track_data = json.load(json_file)
 
 # Convert the track data to a Pandas DataFrame

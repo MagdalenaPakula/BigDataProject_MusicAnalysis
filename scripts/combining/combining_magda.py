@@ -1,15 +1,15 @@
 import json
 
 # Load the first JSON data
-with open('formatted_billboard_track_data.json') as file:
+with open('../../data/formatted/json/formatted_billboard_track_data.json') as file:
     data1 = json.load(file)
 
 # Load the second JSON data
-with open('formatted_spotify_data.json') as file:
+with open('../../data/formatted/json/formatted_spotify_data.json') as file:
     data2 = json.load(file)
 
 # Load the third JSON data
-with open('formatted_lastfm_track_data.json') as file:
+with open('../../data/formatted/json/formatted_lastfm_track_data.json') as file:
     data3 = json.load(file)
 
 # Combine the data based on the 'Track Name' key
@@ -50,5 +50,5 @@ for item in data3:
 combined_data = list(combined_data.values())
 
 # Save the combined data as a new JSON file
-with open('combined_data.json', 'w') as file:
+with open('../../data/combined/combined_data.json', 'w') as file:
     json.dump(combined_data, file)

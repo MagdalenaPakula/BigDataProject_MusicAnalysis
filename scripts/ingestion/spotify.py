@@ -1,4 +1,4 @@
-# This is a BigData Project script 2023
+# This is a BigData Project scripts 2023
 # Authors:          Magdalena Pakula & Aleksandra Banasiak
 # Sources of data:  https://developers.soundcloud.com/docs/api/guide
 #                   https://developer.spotify.com/documentation/web-api/reference/get-track
@@ -78,7 +78,7 @@ for track in sp.playlist_items(playlist_URI)["items"]:
     time.sleep(1)
 
 # Save the track data to a JSON file
-with open("raw_data/spotify_track_data.json", "w") as json_file:
+with open("../../data/raw/spotify_track_data.json", "w") as json_file:
     json.dump(track_data, json_file)
 
 print("Track data saved to spotify_track_data.json")
