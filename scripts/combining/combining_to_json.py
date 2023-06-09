@@ -58,7 +58,7 @@ import json
 def combine_data(json_files, output_file):
     combined_data = {}
 
-    # Function to merge two dictionaries
+    # Function for merging two dictionaries
     def merge_dicts(dict1, dict2):
         result = dict1.copy()
         for key, value in dict2.items():
@@ -68,7 +68,7 @@ def combine_data(json_files, output_file):
                 result[key] = value
         return result
 
-    # Iterate over the JSON files and combine the data
+    # Iterating over the JSON files and combining the data
     for file_path in json_files:
         with open(file_path) as file:
             data = json.load(file)
@@ -80,10 +80,10 @@ def combine_data(json_files, output_file):
                     else:
                         combined_data[track_name] = item
 
-    # Convert the combined data back to a list
+    # Converting the combined data back to a list
     combined_data = list(combined_data.values())
 
-    # Save the combined data as a new JSON file
+    # Saving the combined data as a new JSON file
     with open(output_file, 'w') as file:
         json.dump(combined_data, file)
 
@@ -95,3 +95,4 @@ json_files = [
 ]
 output_file = '../../data/combined/combined_data.json'
 combine_data(json_files, output_file)
+
