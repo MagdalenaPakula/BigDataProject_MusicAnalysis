@@ -1,22 +1,15 @@
 from elasticsearch import Elasticsearch
-import pyarrow.parquet as pq
 import pandas as pd
+import numpy as np
 
-# Step 1: Load the formatted data from the Parquet file
-parquet_file_path = "parquet_files/formatted_data.parquet"
-parquet_data = pq.read_table(parquet_file_path)
-formatted_df = parquet_data.to_pandas()
+# Load the combined data from JSON file
+combined_df = pd.read_json('combined_data.json')
 
-# Step 2: Combine the data from different sources
-billboard_df = pd.read_json('formatted_files/formatted_billboard_track_data.json')
-lastfm_df = pd.read_json('formatted_files/formatted_lastfm_track_data.json')
-spotify_df = pd.read_json('formatted_files/formatted_spotify_data.json')
+# Replace 'NaN' values with np.nan
+combined_df.replace('NaN', np.nan, inplace=True)
 
-# Perform a join operation based on common keys
-combined_df = billboard_df.merge(lastfm_df, left_on=['Track Name', 'Artist Name'], right_on=['name', 'artist'], how='inner')
-
-# Merge with Spotify data based on track and artist names
-combined_df = combined_df.merge(spotify_df, left_on=['Track Name', 'Artist Name'], right_on=['Track Name', 'Artist Name'], how='inner')
+# Print the DataFrame to check for any remaining incompatible values
+print(combined_df)
 
 # Step 3: Index the combined data in Elasticsearch
 es = Elasticsearch('localhost:9200')
@@ -26,7 +19,11 @@ documents = combined_df.to_dict(orient='records')
 
 # Index each document
 for doc in documents:
-    es.index(index='music_data', document=doc)
+    try:
+        es.index(index='music_data', document=doc)
+    except Exception as e:
+        print(f"Failed to index document: {doc}")
+        print(f"Error: {e}")
 
 # Step 4: Verify the indexing process
 res = es.search(index='music_data', size=5)

@@ -1,15 +1,15 @@
 import json
 
 # Load the first JSON data
-with open('formatted_files/formatted_billboard_track_data.json') as file:
+with open('formatted_billboard_track_data.json') as file:
     data1 = json.load(file)
 
 # Load the second JSON data
-with open('formatted_files/formatted_spotify_data.json') as file:
+with open('formatted_spotify_data.json') as file:
     data2 = json.load(file)
 
 # Load the third JSON data
-with open('formatted_files/formatted_lastfm_track_data.json') as file:
+with open('formatted_lastfm_track_data.json') as file:
     data3 = json.load(file)
 
 # Combine the data based on the 'Track Name' key
