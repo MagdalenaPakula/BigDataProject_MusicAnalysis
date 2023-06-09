@@ -85,7 +85,14 @@
       "analysis_url": "https://api.spotify.com/v1/audio-analysis/4DHcnVTT87F0zZhRPYmZ3B",
       "duration_ms": 200455,
       "time_signature": 4
-    }
+    },
+    "name": "Flowers",
+    "artist": "Miley Cyrus",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8088012,
+    "listeners": 646847,
+    "url": "https://www.last.fm/music/Miley+Cyrus/_/Flowers"
   },
   {
     "Track Name": "Where She Goes",
@@ -1028,7 +1035,14 @@
     "Rank": 51,
     "Last Week Rank": 52.0,
     "Peak Rank": 2,
-    "Weeks on Chart": 143
+    "Weeks on Chart": 143,
+    "name": "Blinding Lights",
+    "artist": "The Weeknd",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 23444020,
+    "listeners": 1379564,
+    "url": "https://www.last.fm/music/The+Weeknd/_/Blinding+Lights"
   },
   {
     "Track Name": "See You Again",
@@ -1902,7 +1916,14 @@
     "Rank": 125,
     "Last Week Rank": 127.0,
     "Peak Rank": 97,
-    "Weeks on Chart": 99
+    "Weeks on Chart": 99,
+    "name": "No Role Modelz",
+    "artist": "J. Cole",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 292,
+    "playcount": 11003862,
+    "listeners": 835473,
+    "url": "https://www.last.fm/music/J.+Cole/_/No+Role+Modelz"
   },
   {
     "Track Name": "Ch y La Pizza",
@@ -2343,7 +2364,14 @@
     "Rank": 174,
     "Last Week Rank": 179.0,
     "Peak Rank": 166,
-    "Weeks on Chart": 10
+    "Weeks on Chart": 10,
+    "name": "Lover",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13067828,
+    "listeners": 696403,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Lover"
   },
   {
     "Track Name": "Provenza",
@@ -2523,7 +2551,14 @@
     "Rank": 194,
     "Last Week Rank": 177.0,
     "Peak Rank": 8,
-    "Weeks on Chart": 24
+    "Weeks on Chart": 24,
+    "name": "Ditto",
+    "artist": "NewJeans",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13395735,
+    "listeners": 400118,
+    "url": "https://www.last.fm/music/NewJeans/_/Ditto"
   },
   {
     "Track Name": "Chorrito Pa Las Animas",
@@ -3178,5 +3213,410 @@
       "duration_ms": 218289,
       "time_signature": 4
     }
+  },
+  {
+    "name": "I Wonder",
+    "artist": "Kanye West",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 243,
+    "playcount": 12230211,
+    "listeners": 994474,
+    "url": "https://www.last.fm/music/Kanye+West/_/I+Wonder"
+  },
+  {
+    "name": "Alright",
+    "artist": "Kendrick Lamar",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12362736,
+    "listeners": 946484,
+    "url": "https://www.last.fm/music/Kendrick+Lamar/_/Alright"
+  },
+  {
+    "name": "After The Storm (feat. Tyler, The Creator & Bootsy Collins)",
+    "artist": "Kali Uchis",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 9636985,
+    "listeners": 744238,
+    "url": "https://www.last.fm/music/Kali+Uchis/_/After+The+Storm+(feat.+Tyler,+The+Creator+&+Bootsy+Collins)"
+  },
+  {
+    "name": "Father Stretch My Hands Pt. 1",
+    "artist": "Kanye West",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 14093045,
+    "listeners": 843130,
+    "url": "https://www.last.fm/music/Kanye+West/_/Father+Stretch+My+Hands+Pt.+1"
+  },
+  {
+    "name": "NEW MAGIC WAND",
+    "artist": "Tyler, the Creator",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13314311,
+    "listeners": 851426,
+    "url": "https://www.last.fm/music/Tyler,+the+Creator/_/NEW+MAGIC+WAND"
+  },
+  {
+    "name": "Space Song",
+    "artist": "Beach House",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 15149329,
+    "listeners": 1033866,
+    "url": "https://www.last.fm/music/Beach+House/_/Space+Song"
+  },
+  {
+    "name": "Getaway Car",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 11707263,
+    "listeners": 522998,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Getaway+Car"
+  },
+  {
+    "name": "hotline (edit)",
+    "artist": "Billie Eilish",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 934700,
+    "listeners": 170852,
+    "url": "https://www.last.fm/music/Billie+Eilish/_/hotline+(edit)"
+  },
+  {
+    "name": "Doin' Time",
+    "artist": "Lana Del Rey",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12306669,
+    "listeners": 813580,
+    "url": "https://www.last.fm/music/Lana+Del+Rey/_/Doin%27+Time"
+  },
+  {
+    "name": "CUFF IT",
+    "artist": "Beyonc\u00e9",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8413857,
+    "listeners": 556750,
+    "url": "https://www.last.fm/music/Beyonc%C3%A9/_/CUFF+IT"
+  },
+  {
+    "name": "Family Ties (with Kendrick Lamar)",
+    "artist": "Baby Keem",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12382279,
+    "listeners": 610616,
+    "url": "https://www.last.fm/music/Baby+Keem/_/Family+Ties+(with+Kendrick+Lamar)"
+  },
+  {
+    "name": "Do I Wanna Know?",
+    "artist": "Arctic Monkeys",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 272,
+    "playcount": 24790764,
+    "listeners": 1764983,
+    "url": "https://www.last.fm/music/Arctic+Monkeys/_/Do+I+Wanna+Know%3F"
+  },
+  {
+    "name": "Lost",
+    "artist": "Frank Ocean",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 234,
+    "playcount": 14653839,
+    "listeners": 1121252,
+    "url": "https://www.last.fm/music/Frank+Ocean/_/Lost"
+  },
+  {
+    "name": "West Coast",
+    "artist": "Lana Del Rey",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 260,
+    "playcount": 13490591,
+    "listeners": 890111,
+    "url": "https://www.last.fm/music/Lana+Del+Rey/_/West+Coast"
+  },
+  {
+    "name": "You Belong With Me (Taylor\u2019s Version)",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 7228104,
+    "listeners": 521912,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/You+Belong+With+Me+(Taylor%E2%80%99s+Version)"
+  },
+  {
+    "name": "Cinnamon Girl",
+    "artist": "Lana Del Rey",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 9845414,
+    "listeners": 623781,
+    "url": "https://www.last.fm/music/Lana+Del+Rey/_/Cinnamon+Girl"
+  },
+  {
+    "name": "Ivy",
+    "artist": "Frank Ocean",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 17855931,
+    "listeners": 945546,
+    "url": "https://www.last.fm/music/Frank+Ocean/_/Ivy"
+  },
+  {
+    "name": "DOGTOOTH",
+    "artist": "Tyler, the Creator",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 3304191,
+    "listeners": 388841,
+    "url": "https://www.last.fm/music/Tyler,+the+Creator/_/DOGTOOTH"
+  },
+  {
+    "name": "HUMBLE.",
+    "artist": "Kendrick Lamar",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13592802,
+    "listeners": 1153287,
+    "url": "https://www.last.fm/music/Kendrick+Lamar/_/HUMBLE."
+  },
+  {
+    "name": "Bound 2",
+    "artist": "Kanye West",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 229,
+    "playcount": 14154850,
+    "listeners": 1023298,
+    "url": "https://www.last.fm/music/Kanye+West/_/Bound+2"
+  },
+  {
+    "name": "All of the Girls You Loved Before",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 4438500,
+    "listeners": 342997,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/All+of+the+Girls+You+Loved+Before"
+  },
+  {
+    "name": "nights",
+    "artist": "Frank Ocean",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 19457798,
+    "listeners": 889281,
+    "url": "https://www.last.fm/music/Frank+Ocean/_/nights"
+  },
+  {
+    "name": "champagne problems",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13805831,
+    "listeners": 553151,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/champagne+problems"
+  },
+  {
+    "name": "Duvet",
+    "artist": "b\u00f4a",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 203,
+    "playcount": 9624329,
+    "listeners": 579596,
+    "url": "https://www.last.fm/music/b%C3%B4a/_/Duvet"
+  },
+  {
+    "name": "Would've, Could've, Should've",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8902536,
+    "listeners": 358524,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Would%27ve,+Could%27ve,+Should%27ve"
+  },
+  {
+    "name": "The Great War",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8584839,
+    "listeners": 372144,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/The+Great+War"
+  },
+  {
+    "name": "Mastermind",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8684666,
+    "listeners": 447485,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Mastermind"
+  },
+  {
+    "name": "Vigilante Shit",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8724257,
+    "listeners": 496454,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Vigilante+Shit"
+  },
+  {
+    "name": "Borderline",
+    "artist": "Tame Impala",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 10277369,
+    "listeners": 828112,
+    "url": "https://www.last.fm/music/Tame+Impala/_/Borderline"
+  },
+  {
+    "name": "Love Story (Taylor\u2019s Version)",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8602840,
+    "listeners": 593058,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Love+Story+(Taylor%E2%80%99s+Version)"
+  },
+  {
+    "name": "Redbone",
+    "artist": "Childish Gambino",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 14356712,
+    "listeners": 1120991,
+    "url": "https://www.last.fm/music/Childish+Gambino/_/Redbone"
+  },
+  {
+    "name": "mIRrORbaLl",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12539920,
+    "listeners": 549499,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/mIRrORbaLl"
+  },
+  {
+    "name": "Feel Good Inc.",
+    "artist": "Gorillaz",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 221,
+    "playcount": 22158343,
+    "listeners": 2314997,
+    "url": "https://www.last.fm/music/Gorillaz/_/Feel+Good+Inc."
+  },
+  {
+    "name": "Motion Sickness",
+    "artist": "Phoebe Bridgers",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12275078,
+    "listeners": 701891,
+    "url": "https://www.last.fm/music/Phoebe+Bridgers/_/Motion+Sickness"
+  },
+  {
+    "name": "AMERICA HAS A PROBLEM",
+    "artist": "Beyonc\u00e9",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 5496856,
+    "listeners": 355479,
+    "url": "https://www.last.fm/music/Beyonc%C3%A9/_/AMERICA+HAS+A+PROBLEM"
+  },
+  {
+    "name": "Glimpse of Us",
+    "artist": "Joji",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 15186351,
+    "listeners": 764332,
+    "url": "https://www.last.fm/music/Joji/_/Glimpse+of+Us"
+  },
+  {
+    "name": "Delicate",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 11313243,
+    "listeners": 598844,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/Delicate"
+  },
+  {
+    "name": "Slow dancing in the dark",
+    "artist": "Joji",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 16783910,
+    "listeners": 945943,
+    "url": "https://www.last.fm/music/Joji/_/Slow+dancing+in+the+dark"
+  },
+  {
+    "name": "mY tEArS rICOchEt",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12615106,
+    "listeners": 550953,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/mY+tEArS+rICOchEt"
+  },
+  {
+    "name": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13872791,
+    "listeners": 537735,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/All+Too+Well+(10+Minute+Version)+(Taylor%27s+Version)+(From+The+Vault)"
+  },
+  {
+    "name": "thE 1",
+    "artist": "Taylor Swift",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 12991137,
+    "listeners": 589174,
+    "url": "https://www.last.fm/music/Taylor+Swift/_/thE+1"
+  },
+  {
+    "name": "BEST INTEREST",
+    "artist": "Tyler, the Creator",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 8094452,
+    "listeners": 675186,
+    "url": "https://www.last.fm/music/Tyler,+the+Creator/_/BEST+INTEREST"
+  },
+  {
+    "name": "Shut up My Moms Calling",
+    "artist": "Hotel Ugly",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 5452472,
+    "listeners": 486404,
+    "url": "https://www.last.fm/music/Hotel+Ugly/_/Shut+up+My+Moms+Calling"
+  },
+  {
+    "name": "Washing Machine Heart",
+    "artist": "Mitski",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 13808294,
+    "listeners": 791230,
+    "url": "https://www.last.fm/music/Mitski/_/Washing+Machine+Heart"
+  },
+  {
+    "name": "UNFORGIVEN (feat. Nile Rodgers)",
+    "artist": "LE SSERAFIM",
+    "image": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+    "duration": 0,
+    "playcount": 2955957,
+    "listeners": 167560,
+    "url": "https://www.last.fm/music/LE+SSERAFIM/_/UNFORGIVEN+(feat.+Nile+Rodgers)"
   }
 ]
