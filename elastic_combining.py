@@ -26,7 +26,7 @@ documents = combined_df.to_dict(orient='records')
 
 # Index each document
 for doc in documents:
-    es.index(index='music_data', body=doc)
+    es.index(index='music_data', document=doc)
 
 # Step 4: Verify the indexing process
 res = es.search(index='music_data', size=5)
@@ -34,29 +34,41 @@ print("Indexed Documents:")
 for hit in res['hits']['hits']:
     print(hit['_source'])
 
-# Example: Count the number of tracks by artist genre
-agg_query = {
-    "size": 0,
-    "aggs": {
-        "genre_count": {
-            "terms": {
-                "field": "Artist Genres.keyword",
-                "size": 10
+# Example: Get the top 10 singers for a particular genre
+def get_top_singers_by_genre(genre, top_n=10):
+    query = {
+        "size": 0,
+        "query": {
+            "match": {
+                "Artist Genres.keyword": genre
+            }
+        },
+        "aggs": {
+            "top_singers": {
+                "terms": {
+                    "field": "Artist Name.keyword",
+                    "size": top_n,
+                    "order": {
+                        "_count": "desc"
+                    }
+                }
             }
         }
     }
-}
 
-# Perform the aggregation query
-result = es.search(index='music_data', body=agg_query)
+    # Perform the aggregation query
+    result = es.search(index='music_data', body=query)
 
-# Extract the genre counts from the result
-genre_counts = result["aggregations"]["genre_count"]["buckets"]
+    # Extract the top singers from the result
+    top_singers = result["aggregations"]["top_singers"]["buckets"]
 
-# Print the genre counts
-print("Genre Counts:")
-for genre in genre_counts:
-    print(f"{genre['key']}: {genre['doc_count']}")
+    # Print the top singers
+    print(f"Top {top_n} Singers for Genre: {genre}")
+    for singer in top_singers:
+        print(f"{singer['key']}: {singer['doc_count']}")
+
+# Example: Get the top 10 singers for the "Pop" genre
+get_top_singers_by_genre("Pop", top_n=10)
 
 # Example: Visualize the track popularity over time
 date_agg_query = {
