@@ -1,11 +1,15 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
-from elasticsearch import Elasticsearch
 import pyarrow.parquet as pq
+from elasticsearch import Elasticsearch
 import pandas as pd
 
-# Function to handle button click and perform the desired actions
+def load_parquet_file():
+    file_path = filedialog.askopenfilename(filetypes=[("Parquet Files", "*.parquet")])
+    parquet_entry.delete(0, tk.END)
+    parquet_entry.insert(tk.END, file_path)
+
 def run_program():
     # Get the values from the input fields
     parquet_file_path = parquet_entry.get()
@@ -44,6 +48,9 @@ parquet_label = tk.Label(window, text="Parquet File:")
 parquet_label.pack()
 parquet_entry = tk.Entry(window)
 parquet_entry.pack()
+
+parquet_button = tk.Button(window, text="Browse", command=load_parquet_file)
+parquet_button.pack()
 
 elasticsearch_label = tk.Label(window, text="Elasticsearch Host:")
 elasticsearch_label.pack()
