@@ -1,0 +1,22 @@
+## Usage
+
+1. Ingest the raw data files into the appropriate directories in the `data/raw` directory.
+2. Format the raw data using the scripts in the `scripts/formatting` directory.
+3. Combine the formatted data using the scripts in the `scripts/combining` directory.
+4. Generate music recommendations using the scripts in the `scripts/recommendations` directory.
+5. Find the generated output files in the `output` directory.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Version control
+
+numpy==1.24.3
+pandas==2.0.1
+scikit-learn==1.2.2
+
