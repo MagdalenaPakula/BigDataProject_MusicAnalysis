@@ -11,8 +11,4 @@ def csv_to_json(csv_file, json_file):
     with open(json_file, 'w') as file:
         json.dump(data, file, indent=4)
 
-# Usage example
-csv_file = '../../data/raw/Shazam_Top_200_Global_Chart.csv'
-json_file = '../../data/raw/shazam_track_data.json'
-csv_to_json(csv_file, json_file)
 

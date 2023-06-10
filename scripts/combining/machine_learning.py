@@ -3,6 +3,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
+
 def train_and_predict_weeks_on_chart(data_file):
     # Loading the combined data from the JSON file
     with open(data_file) as file:
@@ -53,5 +54,5 @@ def train_and_predict_weeks_on_chart(data_file):
     print("Real Weeks on Chart:")
     print(real_weeks_on_chart)
 
-# Calling the function with the data file path
-train_and_predict_weeks_on_chart('../../data/combined/combined_data.json')
+
+train_and_predict_weeks_on_chart('../data/combined/combined_data.json')
