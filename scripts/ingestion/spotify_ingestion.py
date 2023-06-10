@@ -2,7 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import json
 import time
-from kafka import KafkaProducer
+# from kafka import KafkaProducer
 
 
 def fetch_spotify_track_data():
