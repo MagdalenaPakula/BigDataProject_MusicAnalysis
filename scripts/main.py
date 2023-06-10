@@ -10,6 +10,7 @@ from scripts.formatting.formatted_billboard import format_billboard_track_data
 from scripts.formatting.formatted_lastfm import format_lastfm_track_data
 from scripts.formatting.formatted_spotify import format_spotify_track_data
 from scripts.indexing.elastic_WORKS import get_top_singers_by_genre, date_result
+from scripts.ingestion.JDBC import run_spotify_pipeline
 from scripts.ingestion.csv_converter import csv_to_json
 from scripts.ingestion.lastfm_ingestion import fetch_lastfm_track_data
 from scripts.ingestion.s3_ingestion import ingest_data_to_s3
@@ -23,7 +24,7 @@ ingest_data_to_s3()
 # 1.3 Last.fm
 fetch_lastfm_track_data()
 # 1.4 JDBC
-# ???
+run_spotify_pipeline()
 
 # 2. FORMATTING
 # 2.1 Billboard
