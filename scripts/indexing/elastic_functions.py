@@ -13,8 +13,6 @@ es.transport.get_connection().headers["Content-Type"] = "application/json;+jsonR
 # Rest of your code...
 
 
-
-
 def load_formatted_data(parquet_file_path):
     """
     Load the formatted data from the Parquet file.
