@@ -9,7 +9,7 @@ from scripts.combining.machine_learning import train_and_predict_weeks_on_chart
 from scripts.formatting.formatted_billboard import format_billboard_track_data
 from scripts.formatting.formatted_lastfm import format_lastfm_track_data
 from scripts.formatting.formatted_spotify import format_spotify_track_data
-from scripts.indexing.elastic_WORKS import get_top_singers_by_genre, date_result
+from scripts.indexing.elastic_WORKS import get_top_singers_by_genre, date_result, index_data_in_elasticsearch, load_combined_data, verify_indexing, visualize_track_popularity_over_time
 from scripts.ingestion.JDBC import run_spotify_pipeline
 from scripts.ingestion.csv_converter import csv_to_json
 from scripts.ingestion.lastfm_ingestion import fetch_lastfm_track_data
@@ -108,7 +108,27 @@ def execute_data_pipeline():
         messagebox.showinfo("Success", "Data pipeline executed successfully.")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
+def elastic():
+    file_path = '../../data/combined/combined_data.json'
+    index_name = 'music_data'
 
+    # Load combined data
+    combined_data = load_combined_data(file_path)
+
+    # Index data in Elasticsearch
+    index_data_in_elasticsearch(combined_data, index_name)
+
+    # Verify indexing
+    verify_indexing(index_name)
+
+    # Get top singers by genre
+    genre = "Pop"
+    get_top_singers_by_genre(index_name, genre, top_n=10)
+
+    # Visualize track popularity over time
+    visualize_track_popularity_over_time(index_name)
+
+        
 
 # Create the main window
 window = tk.Tk()
