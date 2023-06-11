@@ -6,7 +6,7 @@ from pyspark.ml.recommendation import ALS
 
 def combine_spark():
     # Load the combined JSON data
-    with open('../../data/combined/combined_data.json') as file:
+    with open('data/combined/combined_data.json') as file:
         combined_data = json.load(file)
 
     # Create a SparkSession
@@ -35,4 +35,4 @@ def combine_spark():
     spark.stop()
 
 # Call the function to execute the music data analysis
-combine_spark()
+#combine_spark()
