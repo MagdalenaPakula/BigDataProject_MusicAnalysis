@@ -9,7 +9,7 @@ from scripts.combining.machine_learning import train_and_predict_weeks_on_chart
 from scripts.formatting.formatted_billboard import format_billboard_track_data
 from scripts.formatting.formatted_lastfm import format_lastfm_track_data
 from scripts.formatting.formatted_spotify import format_spotify_track_data
-from scripts.indexing.elastic_WORKS import get_top_singers_by_genre, date_result, index_data_in_elasticsearch, load_combined_data, verify_indexing, visualize_track_popularity_over_time
+from scripts.indexing.elastic_WORKS import get_top_singers_by_genre, date_result
 from scripts.ingestion.JDBC import run_spotify_pipeline
 from scripts.ingestion.csv_converter import csv_to_json
 from scripts.ingestion.lastfm_ingestion import fetch_lastfm_track_data
